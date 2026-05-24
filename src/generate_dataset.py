@@ -8,14 +8,6 @@ random.seed(42)
 OUTPUT_PATH = Path("data/raw/prompt_quality_dataset.json")
 TARGET_PER_SCORE = 240
 
-# =========================================================
-# 15 TASK CATEGORIES
-# Each task has:
-# - reference prompt
-# - task-specific rubric
-# - verb used to generate submissions
-# - focus/format/audience/constraints for variation
-# =========================================================
 
 TASKS = {
     "Summarize an article": {
