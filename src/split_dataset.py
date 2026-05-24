@@ -28,10 +28,12 @@ for path, split_data in [
     (VAL_PATH, val_data),
     (TEST_PATH, test_data),
 ]:
+    path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(split_data, f, indent=4, ensure_ascii=False)
 
 print("Dataset split completed")
+print(f"Total: {n}")
 print(f"Train: {len(train_data)}")
 print(f"Validation: {len(val_data)}")
 print(f"Test: {len(test_data)}")

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-INPUT_PATH = Path("data/raw/prompt_quality_dataset.json")
+INPUT_PATH = Path("data/raw/final_prompt_quality_dataset.json")
 OUTPUT_PATH = Path("data/processed/formatted_dataset.json")
 
 with open(INPUT_PATH, "r", encoding="utf-8") as f:
@@ -10,10 +10,8 @@ with open(INPUT_PATH, "r", encoding="utf-8") as f:
 formatted_data = []
 
 for item in data:
-
     instruction = (
-        "Evaluate the quality of the submitted prompt "
-        "based on the rubric. "
+        "Evaluate the quality of the submitted prompt based on the rubric. "
         "Return a score from 0 to 4 and explain the reason."
     )
 
@@ -41,13 +39,11 @@ Rationale:
 {item['rationale']}
 """
 
-    formatted_example = {
+    formatted_data.append({
         "instruction": instruction,
         "input": input_text.strip(),
         "output": output_text.strip()
-    }
-
-    formatted_data.append(formatted_example)
+    })
 
 OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 

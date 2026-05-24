@@ -1,0 +1,1952 @@
+[
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Please help.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Please help.' is not usable for the task 'Summarize a research paper abstract' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Do it fast.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Do it fast.' is not usable for the task 'Summarize a research paper abstract' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "I need something good.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'I need something good.' is not usable for the task 'Summarize a research paper abstract' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Summarize this.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Summarize this.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Make a summary.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Make a summary.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Tell me the abstract.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Tell me the abstract.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Summarize the abstract clearly.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Summarize the abstract clearly.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Write a short summary of this research abstract.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Write a short summary of this research abstract.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Explain what this abstract says.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Explain what this abstract says.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Summarize the abstract and mention the main result.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Summarize the abstract and mention the main result.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Write a clear summary of the abstract with the problem and finding.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Write a clear summary of the abstract with the problem and finding.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Summarize this abstract in simple language.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Summarize this abstract in simple language.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Summarize the research abstract in 3 bullet points covering the problem, method, and main finding.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Summarize the research abstract in 3 bullet points covering the problem, method, and main finding.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Create a concise academic summary of the abstract in under 80 words, including the research goal and result.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Create a concise academic summary of the abstract in under 80 words, including the research goal and result.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Summarize a research paper abstract",
+        "reference": "Summarize the abstract in 3 bullet points, covering the problem, method, and main finding.",
+        "submission": "Summarize the abstract for first-year students, focusing on the problem, method, and conclusion.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Summarize the abstract for first-year students, focusing on the problem, method, and conclusion.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Make it nice.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Make it nice.' is not usable for the task 'Write a prompt for image generation' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Anything visual.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Anything visual.' is not usable for the task 'Write a prompt for image generation' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Good picture.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Good picture.' is not usable for the task 'Write a prompt for image generation' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Generate an image.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Generate an image.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Make a photo.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Make a photo.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Create a picture.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Create a picture.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Generate an image of a city.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Generate an image of a city.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Create a realistic photo of a person.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Create a realistic photo of a person.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Make an image with good lighting.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Make an image with good lighting.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Generate a cinematic image of a city at night with dramatic lighting.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Generate a cinematic image of a city at night with dramatic lighting.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Create a realistic portrait with soft light and a serious mood.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Create a realistic portrait with soft light and a serious mood.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Make a fantasy landscape with mountains and fog.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Make a fantasy landscape with mountains and fog.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Generate a cinematic night street photo with neon lights, wet pavement reflections, wide-angle lens, moody atmosphere, and realistic film grain.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Generate a cinematic night street photo with neon lights, wet pavement reflections, wide-angle lens, moody atmosphere, and realistic film grain.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Create a realistic portrait of a young student in a library, soft window light, shallow depth of field, natural skin texture, and serious academic mood.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Create a realistic portrait of a young student in a library, soft window light, shallow depth of field, natural skin texture, and serious academic mood.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Write a prompt for image generation",
+        "reference": "Write a detailed image-generation prompt specifying subject, setting, style, lighting, camera angle, and mood.",
+        "submission": "Generate a fantasy landscape with snowy mountains, low fog, golden sunrise lighting, wide cinematic composition, and detailed environmental textures.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Generate a fantasy landscape with snowy mountains, low fog, golden sunrise lighting, wide cinematic composition, and detailed environmental textures.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Give me something.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Give me something.' is not usable for the task 'Create study notes' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "This exam.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'This exam.' is not usable for the task 'Create study notes' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Help tomorrow.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Help tomorrow.' is not usable for the task 'Create study notes' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Make notes.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Make notes.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Study notes please.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Study notes please.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Write notes.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Write notes.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Make study notes about NLP.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Make study notes about NLP.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Create notes for this chapter.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Create notes for this chapter.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Write short notes with examples.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Write short notes with examples.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Create organized study notes with definitions and examples.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Create organized study notes with definitions and examples.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Make exam revision notes with key points and short questions.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Make exam revision notes with key points and short questions.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Summarize this chapter as study notes using headings.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Summarize this chapter as study notes using headings.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Create concise exam study notes with headings, definitions, key points, examples, and 5 review questions at the end.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Create concise exam study notes with headings, definitions, key points, examples, and 5 review questions at the end.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Turn this NLP chapter into structured notes with bullet points, important terms, examples, and common exam-style questions.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Turn this NLP chapter into structured notes with bullet points, important terms, examples, and common exam-style questions.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Create study notes",
+        "reference": "Create concise study notes with definitions, key points, examples, and a short review question section.",
+        "submission": "Create beginner-friendly study notes covering the main concepts, definitions, examples, and a short final revision checklist.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Create beginner-friendly study notes covering the main concepts, definitions, examples, and a short final revision checklist.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Better.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Better.' is not usable for the task 'Improve a weak prompt' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Fix.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Fix.' is not usable for the task 'Improve a weak prompt' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Need good.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Need good.' is not usable for the task 'Improve a weak prompt' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Improve this prompt.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Improve this prompt.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Make this better.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Make this better.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Rewrite it.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Rewrite it.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Improve this prompt and make it clearer.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Improve this prompt and make it clearer.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Rewrite this prompt with more details.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Rewrite this prompt with more details.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Make this prompt more specific.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Make this prompt more specific.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Improve this prompt by adding clearer instructions and constraints.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Improve this prompt by adding clearer instructions and constraints.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Rewrite the prompt to include audience, format, and expected output.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Rewrite the prompt to include audience, format, and expected output.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Make this prompt more specific and useful for ChatGPT.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Make this prompt more specific and useful for ChatGPT.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Rewrite the weak prompt by adding a clear task, context, target audience, output format, constraints, and an example of the expected result.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Rewrite the weak prompt by adding a clear task, context, target audience, output format, constraints, and an example of the expected result.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Improve this prompt for ChatGPT by making it specific, structured, and constrained while preserving the original goal.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Improve this prompt for ChatGPT by making it specific, structured, and constrained while preserving the original goal.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Improve a weak prompt",
+        "reference": "Rewrite the weak prompt into a clearer prompt with task, context, constraints, format, and expected output.",
+        "submission": "Transform this vague prompt into a high-quality prompt that includes role, task, context, format, tone, and success criteria.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Transform this vague prompt into a high-quality prompt that includes role, task, context, format, tone, and success criteria.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Code.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Code.' is not usable for the task 'Generate Python code explanation' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "This thing.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'This thing.' is not usable for the task 'Generate Python code explanation' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Help me with it.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Help me with it.' is not usable for the task 'Generate Python code explanation' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Explain code.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Explain code.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Explain this.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Explain this.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "What is this code?",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'What is this code?' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Explain this Python code.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Explain this Python code.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Tell me what this code does.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Tell me what this code does.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Explain the code clearly.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Explain the code clearly.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Explain this Python code step by step for beginners.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Explain this Python code step by step for beginners.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Describe what this Python code does and mention the important functions.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Describe what this Python code does and mention the important functions.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Explain the code with inputs and outputs.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Explain the code with inputs and outputs.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Explain this Python code step by step for beginners, including the purpose, inputs, outputs, important functions, and possible errors.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Explain this Python code step by step for beginners, including the purpose, inputs, outputs, important functions, and possible errors.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Describe what each part of this Python script does, using simple language and a short summary at the end.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Describe what each part of this Python script does, using simple language and a short summary at the end.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Generate Python code explanation",
+        "reference": "Explain the Python code step by step, describing purpose, inputs, outputs, and important functions.",
+        "submission": "Explain the Python code line by line, focusing on logic flow, variables, functions, and expected output.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Explain the Python code line by line, focusing on logic flow, variables, functions, and expected output.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Say something.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Say something.' is not usable for the task 'Write a professional apology message' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Message.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Message.' is not usable for the task 'Write a professional apology message' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Fix it.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Fix it.' is not usable for the task 'Write a professional apology message' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Write apology.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Write apology.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Apologize.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Apologize.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Make a sorry message.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Make a sorry message.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Write a polite apology message.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Write a polite apology message.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Write an apology for being late.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Write an apology for being late.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Make the apology sound professional.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Make the apology sound professional.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Write a polite apology message explaining why I was late and accepting responsibility.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Write a polite apology message explaining why I was late and accepting responsibility.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Create a professional apology message with a respectful tone.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Create a professional apology message with a respectful tone.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Write an apology that admits the mistake and asks for understanding.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Write an apology that admits the mistake and asks for understanding.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Write a professional apology message that acknowledges the delay, accepts responsibility, briefly explains the reason, and suggests a clear next step.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Write a professional apology message that acknowledges the delay, accepts responsibility, briefly explains the reason, and suggests a clear next step.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Draft a respectful apology message for missing a deadline, using a sincere tone, accepting responsibility, and promising a corrected submission time.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Draft a respectful apology message for missing a deadline, using a sincere tone, accepting responsibility, and promising a corrected submission time.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Write a professional apology message",
+        "reference": "Write a polite apology message that acknowledges the mistake, accepts responsibility, and explains the next step.",
+        "submission": "Write a concise apology message to a professor that explains the issue politely, avoids excuses, and asks for permission to fix the mistake.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Write a concise apology message to a professor that explains the issue politely, avoids excuses, and asks for permission to fix the mistake.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Questions.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Questions.' is not usable for the task 'Create quiz questions' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Make it.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Make it.' is not usable for the task 'Create quiz questions' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Need exam.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Need exam.' is not usable for the task 'Create quiz questions' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Make questions.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Make questions.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Create a quiz.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Create a quiz.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Ask questions.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Ask questions.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Create quiz questions about NLP.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Create quiz questions about NLP.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Make 5 questions for this topic.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Make 5 questions for this topic.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Generate questions with answers.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Generate questions with answers.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Create 10 quiz questions about NLP with answers.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Create 10 quiz questions about NLP with answers.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Generate mixed difficulty questions with correct answers.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Generate mixed difficulty questions with correct answers.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Make MCQs about transformers with answers and short explanations.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Make MCQs about transformers with answers and short explanations.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Create 10 NLP quiz questions with mixed difficulty, four answer choices, the correct answer, and a one-sentence explanation for each.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Create 10 NLP quiz questions with mixed difficulty, four answer choices, the correct answer, and a one-sentence explanation for each.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Generate 5 beginner and 5 advanced questions about transformers, including answers and short explanations.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Generate 5 beginner and 5 advanced questions about transformers, including answers and short explanations.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Create quiz questions",
+        "reference": "Create quiz questions with varied difficulty, correct answers, and short explanations.",
+        "submission": "Create exam-style MCQs about attention mechanisms with options A-D, correct answer, and explanation.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Create exam-style MCQs about attention mechanisms with options A-D, correct answer, and explanation.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Make better.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Make better.' is not usable for the task 'Rewrite text formally' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Change this.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Change this.' is not usable for the task 'Rewrite text formally' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Good words.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Good words.' is not usable for the task 'Rewrite text formally' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Rewrite this.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Rewrite this.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Make it formal.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Make it formal.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Fix the text.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Fix the text.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Rewrite this text formally.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Rewrite this text formally.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Make this sentence sound better.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Make this sentence sound better.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Improve this paragraph.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Improve this paragraph.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Rewrite this text in a formal tone while keeping the meaning.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Rewrite this text in a formal tone while keeping the meaning.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Improve the paragraph clarity and make it more professional.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Improve the paragraph clarity and make it more professional.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Make this message formal and easier to understand.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Make this message formal and easier to understand.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Rewrite the following text in a formal academic tone while preserving the original meaning, improving clarity, and avoiding unnecessary complexity.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Rewrite the following text in a formal academic tone while preserving the original meaning, improving clarity, and avoiding unnecessary complexity.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Convert this casual message into a professional version suitable for email, keeping it concise and respectful.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Convert this casual message into a professional version suitable for email, keeping it concise and respectful.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Rewrite text formally",
+        "reference": "Rewrite the text in a formal tone while preserving the original meaning and improving clarity.",
+        "submission": "Rewrite the paragraph formally, correct grammar issues, preserve the original intent, and make the structure clearer.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Rewrite the paragraph formally, correct grammar issues, preserve the original intent, and make the structure clearer.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Compare.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Compare.' is not usable for the task 'Compare two concepts' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "These two.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'These two.' is not usable for the task 'Compare two concepts' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Tell difference.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Tell difference.' is not usable for the task 'Compare two concepts' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Compare them.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Compare them.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "What is the difference?",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'What is the difference?' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Explain both.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Explain both.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Compare RNN and Transformer.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Compare RNN and Transformer.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Explain the difference between two concepts.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Explain the difference between two concepts.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Compare them clearly.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Compare them clearly.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Compare RNNs and Transformers using examples.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Compare RNNs and Transformers using examples.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Explain similarities and differences between RNN and Transformer.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Explain similarities and differences between RNN and Transformer.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Compare the two concepts in a table.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Compare the two concepts in a table.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Compare RNNs and Transformers in a table, covering architecture, handling of sequence context, training speed, and one example use case for each.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Compare RNNs and Transformers in a table, covering architecture, handling of sequence context, training speed, and one example use case for each.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Explain the similarities and differences between Naive Bayes and Logistic Regression using simple examples and a short comparison table.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Explain the similarities and differences between Naive Bayes and Logistic Regression using simple examples and a short comparison table.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Compare two concepts",
+        "reference": "Compare the two concepts using a clear table, similarities, differences, and one example for each.",
+        "submission": "Compare attention and recurrence for NLP sequence modeling, including advantages, limitations, and practical examples.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Compare attention and recurrence for NLP sequence modeling, including advantages, limitations, and practical examples.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Find stuff.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Find stuff.' is not usable for the task 'Extract information from text' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "This text.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'This text.' is not usable for the task 'Extract information from text' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Do extraction.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 0,
+        "rationale": "The submitted prompt 'Do extraction.' is not usable for the task 'Extract information from text' because it does not clearly state what output is needed. It fails clarity and completeness."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Extract information.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Extract information.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Find names.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Find names.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Get the details.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 1,
+        "rationale": "The submitted prompt 'Get the details.' is related to the task, but it is very vague. It does not specify format, audience, length, tone, or required content."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Extract names and dates from the text.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Extract names and dates from the text.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Find the important information in this text.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Find the important information in this text.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Extract entities from the paragraph.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 2,
+        "rationale": "The submitted prompt 'Extract entities from the paragraph.' communicates the general goal, but it only partially satisfies the rubric because it lacks stronger constraints and details."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Extract names, dates, and locations from the text in a table.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Extract names, dates, and locations from the text in a table.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Find the key entities and actions in the paragraph.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Find the key entities and actions in the paragraph.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Extract structured information from the text as JSON.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 3,
+        "rationale": "The submitted prompt 'Extract structured information from the text as JSON.' is clear and useful, but it could be stronger by adding more precise format, length, audience, or evaluation constraints."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Extract structured information from the text in JSON format with fields for person, organization, date, location, action, and confidence.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Extract structured information from the text in JSON format with fields for person, organization, date, location, action, and confidence.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Read the paragraph and extract all named entities, dates, locations, and related actions in a clean table.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Read the paragraph and extract all named entities, dates, locations, and related actions in a clean table.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    },
+    {
+        "task": "Extract information from text",
+        "reference": "Extract structured information from the text, including entities, dates, locations, and actions in JSON format.",
+        "submission": "Extract event details from the text, including event name, date, time, location, participants, and purpose, using JSON output.",
+        "rubric": {
+            "1": "Clarity of instruction",
+            "2": "Specificity and task relevance",
+            "3": "Useful constraints or required output format",
+            "4": "Completeness and usefulness for the target task"
+        },
+        "score": 4,
+        "rationale": "The submitted prompt 'Extract event details from the text, including event name, date, time, location, participants, and purpose, using JSON output.' strongly satisfies the rubric because it is clear, task-specific, complete, and includes useful constraints."
+    }
+]

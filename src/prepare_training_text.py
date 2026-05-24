@@ -20,12 +20,7 @@ for split in SPLITS:
     with open(input_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    converted = []
-
-    for item in data:
-        converted.append({
-            "text": make_prompt(item)
-        })
+    converted = [{"text": make_prompt(item)} for item in data]
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(converted, f, indent=4, ensure_ascii=False)
