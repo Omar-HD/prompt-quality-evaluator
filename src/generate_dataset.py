@@ -6,421 +6,240 @@ from collections import Counter
 random.seed(42)
 
 OUTPUT_PATH = Path("data/raw/prompt_quality_dataset.json")
-TARGET_PER_SCORE = 240
 
-TASKS = {
-    "Summarize an article": {
-        "reference": "Summarize the article clearly by focusing on the main idea, key arguments, and conclusion.",
-        "verb": "summarize the article",
-        "rubric": {
-            "1": "Does the prompt clearly request a summary?",
-            "2": "Does it specify what parts of the article to focus on?",
-            "3": "Does it include useful constraints such as length, format, or audience?",
-            "4": "Is the prompt complete enough to guide a high-quality summary?"
-        },
-        "focus": ["main idea", "key arguments", "supporting evidence", "conclusion", "important details"],
-        "formats": ["bullet points", "one paragraph", "numbered list", "short paragraph"],
-        "audiences": ["beginners", "students", "general readers", "busy readers"],
-        "constraints": ["under 100 words", "under 150 words", "in 5 bullet points", "in simple language"]
-    },
-    "Translate Arabic to English": {
-        "reference": "Translate the Arabic text into fluent English while preserving meaning, tone, and context.",
-        "verb": "translate the Arabic text into English",
-        "rubric": {
-            "1": "Does the prompt clearly request translation?",
-            "2": "Does it specify the source and target languages?",
-            "3": "Does it mention meaning, tone, context, or naturalness?",
-            "4": "Is the prompt complete enough to guide accurate translation?"
-        },
-        "focus": ["meaning", "tone", "context", "natural wording", "cultural meaning"],
-        "formats": ["direct translation", "natural English sentence", "formal translation", "simple translation"],
-        "audiences": ["English speakers", "students", "general readers", "beginners"],
-        "constraints": ["avoid literal translation", "preserve the original tone", "keep the meaning accurate", "use fluent English"]
-    },
-    "Write a professional email": {
-        "reference": "Write a polite professional email with a clear purpose, relevant context, and a specific requested action.",
-        "verb": "write a professional email",
-        "rubric": {
-            "1": "Does the prompt clearly request an email?",
-            "2": "Does it specify the email purpose and context?",
-            "3": "Does it mention tone, structure, or requested action?",
-            "4": "Is the prompt complete enough to produce a professional email?"
-        },
-        "focus": ["purpose", "context", "requested action", "polite tone", "clear subject"],
-        "formats": ["formal email", "short email", "email with subject line", "structured email"],
-        "audiences": ["a professor", "a manager", "a client", "a colleague"],
-        "constraints": ["polite tone", "clear subject line", "short explanation", "respectful closing"]
-    },
-    "Generate social media captions": {
-        "reference": "Generate engaging social media captions with a clear tone, target audience, and relevant hashtags.",
-        "verb": "generate social media captions",
-        "rubric": {
-            "1": "Does the prompt clearly request captions?",
-            "2": "Does it specify platform, topic, or audience?",
-            "3": "Does it include tone, length, hashtags, or style constraints?",
-            "4": "Is the prompt complete enough to generate suitable captions?"
-        },
-        "focus": ["engagement", "brand tone", "hashtags", "short wording", "target audience"],
-        "formats": ["Instagram captions", "TikTok captions", "short captions", "caption list"],
-        "audiences": ["young audience", "fashion followers", "students", "general audience"],
-        "constraints": ["under 20 words", "include 3 hashtags", "friendly tone", "include emojis"]
-    },
-    "Explain machine learning concepts": {
-        "reference": "Explain the machine learning concept in simple language using a practical example and avoiding unnecessary jargon.",
-        "verb": "explain machine learning",
-        "rubric": {
-            "1": "Does the prompt clearly ask for an explanation?",
-            "2": "Does it identify the topic or concept?",
-            "3": "Does it specify audience level, examples, or simplicity?",
-            "4": "Is the prompt complete enough to produce an understandable explanation?"
-        },
-        "focus": ["basic meaning", "real-world example", "step-by-step explanation", "simple analogy", "main idea"],
-        "formats": ["short explanation", "bullet points", "step-by-step explanation", "simple paragraph"],
-        "audiences": ["beginners", "first-year students", "non-technical readers", "computer science students"],
-        "constraints": ["avoid jargon", "under 150 words", "use one example", "use simple language"]
-    },
-    "Write a customer support response": {
-        "reference": "Write a polite customer support response that acknowledges the complaint, apologizes, explains the next step, and offers a solution.",
-        "verb": "write a customer support response",
-        "rubric": {
-            "1": "Does the prompt clearly request a support response?",
-            "2": "Does it describe the customer issue?",
-            "3": "Does it mention empathy, apology, solution, or next step?",
-            "4": "Is the prompt complete enough to produce a helpful professional reply?"
-        },
-        "focus": ["customer complaint", "apology", "solution", "next step", "empathy"],
-        "formats": ["short reply", "professional response", "support email", "chat response"],
-        "audiences": ["angry customer", "confused customer", "new customer", "returning customer"],
-        "constraints": ["empathetic tone", "clear solution", "apologize politely", "include next steps"]
-    },
-    "Create study notes": {
-        "reference": "Create concise study notes with key definitions, examples, and important points.",
-        "verb": "create study notes",
-        "rubric": {
-            "1": "Does the prompt clearly request study notes?",
-            "2": "Does it specify the topic or learning goal?",
-            "3": "Does it include format, examples, or level of detail?",
-            "4": "Is the prompt complete enough to produce useful notes?"
-        },
-        "focus": ["definitions", "key points", "examples", "exam review", "important terms"],
-        "formats": ["bullet notes", "table format", "numbered notes", "short study guide"],
-        "audiences": ["students", "beginners", "exam takers", "classmates"],
-        "constraints": ["simple language", "include examples", "keep it concise", "highlight key terms"]
-    },
-    "Generate interview questions": {
-        "reference": "Generate interview questions with clear difficulty levels and short expected answers.",
-        "verb": "generate interview questions",
-        "rubric": {
-            "1": "Does the prompt clearly request interview questions?",
-            "2": "Does it specify the topic or role?",
-            "3": "Does it include number, difficulty, or answer format?",
-            "4": "Is the prompt complete enough to produce useful interview questions?"
-        },
-        "focus": ["technical skills", "problem solving", "difficulty levels", "expected answers", "core concepts"],
-        "formats": ["list of questions", "table", "numbered questions", "questions with answers"],
-        "audiences": ["junior developers", "students", "job candidates", "beginners"],
-        "constraints": ["generate 5 questions", "include answers", "increase difficulty", "keep questions clear"]
-    },
-    "Rewrite text formally": {
-        "reference": "Rewrite the text in a formal tone while preserving the original meaning.",
-        "verb": "rewrite the text formally",
-        "rubric": {
-            "1": "Does the prompt clearly request rewriting?",
-            "2": "Does it specify the desired tone or style?",
-            "3": "Does it mention preserving meaning or improving clarity?",
-            "4": "Is the prompt complete enough to guide a high-quality rewrite?"
-        },
-        "focus": ["formal tone", "clarity", "professional wording", "original meaning", "grammar"],
-        "formats": ["formal paragraph", "professional version", "polished rewrite", "clear rewrite"],
-        "audiences": ["professors", "managers", "clients", "academic readers"],
-        "constraints": ["preserve meaning", "improve clarity", "avoid slang", "keep it concise"]
-    },
-    "Create a presentation outline": {
-        "reference": "Create a clear presentation outline with slide titles, key points, and logical flow.",
-        "verb": "create a presentation outline",
-        "rubric": {
-            "1": "Does the prompt clearly request an outline?",
-            "2": "Does it specify the topic or purpose?",
-            "3": "Does it include slide count, structure, or audience?",
-            "4": "Is the prompt complete enough to produce a useful presentation outline?"
-        },
-        "focus": ["slide titles", "main points", "logical flow", "introduction and conclusion", "audience"],
-        "formats": ["slide outline", "numbered outline", "table", "bullet-point plan"],
-        "audiences": ["students", "professors", "class audience", "beginners"],
-        "constraints": ["6 slides", "include speaker notes", "clear structure", "short bullet points"]
-    },
-    "Write a product description": {
-        "reference": "Write a persuasive product description that highlights features, benefits, and the target customer.",
-        "verb": "write a product description",
-        "rubric": {
-            "1": "Does the prompt clearly request a product description?",
-            "2": "Does it specify product features or target audience?",
-            "3": "Does it mention tone, benefits, or format?",
-            "4": "Is the prompt complete enough to create a persuasive description?"
-        },
-        "focus": ["main features", "customer benefits", "target audience", "selling points", "use cases"],
-        "formats": ["short paragraph", "bullet list", "marketing copy", "online store description"],
-        "audiences": ["online shoppers", "young adults", "students", "professionals"],
-        "constraints": ["persuasive tone", "under 120 words", "mention benefits", "clear call to action"]
-    },
-    "Explain a scientific concept": {
-        "reference": "Explain the scientific concept clearly using simple language, an example, and the main cause-effect relationship.",
-        "verb": "explain the scientific concept",
-        "rubric": {
-            "1": "Does the prompt clearly request an explanation?",
-            "2": "Does it specify the concept or scientific focus?",
-            "3": "Does it include audience level, examples, or simplicity?",
-            "4": "Is the prompt complete enough to produce a clear scientific explanation?"
-        },
-        "focus": ["cause and effect", "main definition", "real-world example", "key process", "simple analogy"],
-        "formats": ["short paragraph", "bullet points", "step-by-step explanation", "beginner explanation"],
-        "audiences": ["high school students", "beginners", "non-science readers", "university students"],
-        "constraints": ["avoid complex jargon", "include one example", "under 150 words", "explain step by step"]
-    },
-    "Simplify complex text": {
-        "reference": "Simplify the text while preserving the original meaning and making it easier for the target audience to understand.",
-        "verb": "simplify the complex text",
-        "rubric": {
-            "1": "Does the prompt clearly request simplification?",
-            "2": "Does it specify the target audience or reading level?",
-            "3": "Does it mention preserving meaning or reducing jargon?",
-            "4": "Is the prompt complete enough to produce a clear simplified version?"
-        },
-        "focus": ["main meaning", "simple wording", "important details", "clear explanation", "reduced jargon"],
-        "formats": ["simple paragraph", "bullet points", "plain English version", "short explanation"],
-        "audiences": ["beginners", "children", "non-experts", "students"],
-        "constraints": ["preserve meaning", "avoid jargon", "use simple words", "keep it concise"]
-    },
-    "Correct grammar and spelling": {
-        "reference": "Correct grammar, spelling, and punctuation while preserving the original meaning and style.",
-        "verb": "correct grammar and spelling",
-        "rubric": {
-            "1": "Does the prompt clearly request correction?",
-            "2": "Does it specify what should be corrected?",
-            "3": "Does it mention preserving meaning or style?",
-            "4": "Is the prompt complete enough to guide accurate editing?"
-        },
-        "focus": ["grammar", "spelling", "punctuation", "sentence clarity", "original meaning"],
-        "formats": ["corrected paragraph", "edited version", "list of corrections", "clean final version"],
-        "audiences": ["students", "writers", "professionals", "English learners"],
-        "constraints": ["preserve meaning", "do not rewrite too much", "fix punctuation", "keep original tone"]
-    },
-    "Compare two concepts": {
-        "reference": "Compare two concepts clearly by explaining similarities, differences, and practical examples.",
-        "verb": "compare two concepts",
-        "rubric": {
-            "1": "Does the prompt clearly request comparison?",
-            "2": "Does it specify the concepts being compared?",
-            "3": "Does it mention similarities, differences, examples, or format?",
-            "4": "Is the prompt complete enough to produce a useful comparison?"
-        },
-        "focus": ["similarities", "differences", "examples", "advantages and disadvantages", "main use cases"],
-        "formats": ["comparison table", "bullet points", "short paragraph", "structured comparison"],
-        "audiences": ["students", "beginners", "decision makers", "general readers"],
-        "constraints": ["include examples", "use a table", "keep it concise", "explain simply"]
-    }
+# 100,000 total = 20,000 per score
+TARGET_PER_SCORE = 20000
+
+TASKS = [
+    ("Summarize an article", "summarize the article", "Summarize the article clearly by focusing on the main idea, key arguments, and conclusion."),
+    ("Translate Arabic to English", "translate the Arabic text into English", "Translate the Arabic text into fluent English while preserving meaning, tone, and context."),
+    ("Write a professional email", "write a professional email", "Write a polite professional email with a clear purpose, relevant context, and a specific requested action."),
+    ("Generate social media captions", "generate social media captions", "Generate engaging social media captions with a clear tone, target audience, and relevant hashtags."),
+    ("Explain machine learning concepts", "explain machine learning", "Explain the machine learning concept in simple language using a practical example and avoiding unnecessary jargon."),
+    ("Write a customer support response", "write a customer support response", "Write a polite customer support response that acknowledges the complaint, apologizes, explains the next step, and offers a solution."),
+    ("Create study notes", "create study notes", "Create concise study notes with key definitions, examples, and important points."),
+    ("Generate interview questions", "generate interview questions", "Generate interview questions with clear difficulty levels and short expected answers."),
+    ("Rewrite text formally", "rewrite the text formally", "Rewrite the text in a formal tone while preserving the original meaning."),
+    ("Create a presentation outline", "create a presentation outline", "Create a clear presentation outline with slide titles, key points, and logical flow."),
+    ("Write a product description", "write a product description", "Write a persuasive product description that highlights features, benefits, and the target customer."),
+    ("Explain a scientific concept", "explain the scientific concept", "Explain the scientific concept clearly using simple language, an example, and the main cause-effect relationship."),
+    ("Simplify complex text", "simplify the complex text", "Simplify the text while preserving the original meaning and making it easier for the target audience to understand."),
+    ("Correct grammar and spelling", "correct grammar and spelling", "Correct grammar, spelling, and punctuation while preserving the original meaning and style."),
+    ("Compare two concepts", "compare two concepts", "Compare two concepts clearly by explaining similarities, differences, and practical examples."),
+    ("Extract key information", "extract key information from the text", "Extract the most important information from the text in a clear structured format."),
+    ("Classify text topic", "classify the text topic", "Classify the text into the most appropriate topic category and explain the reason briefly."),
+    ("Analyze sentiment", "analyze the sentiment of the text", "Analyze the sentiment of the text and identify whether it is positive, negative, or neutral."),
+    ("Write a project abstract", "write a project abstract", "Write a concise project abstract that explains the problem, method, and expected result."),
+    ("Generate quiz questions", "generate quiz questions", "Generate quiz questions with correct answers and clear difficulty levels."),
+    ("Create a lesson plan", "create a lesson plan", "Create a structured lesson plan with objectives, activities, and assessment methods."),
+    ("Write a bug report", "write a bug report", "Write a clear bug report with steps to reproduce, expected behavior, and actual behavior."),
+    ("Review a resume bullet", "review a resume bullet", "Evaluate and improve a resume bullet to make it more specific, measurable, and professional."),
+    ("Write a meeting agenda", "write a meeting agenda", "Write a clear meeting agenda with topics, timing, and expected outcomes."),
+    ("Generate SQL query explanation", "explain an SQL query", "Explain what an SQL query does using simple language and examples.")
+]
+
+RUBRIC_DEFAULT = {
+    "1": "Does the prompt clearly state the task?",
+    "2": "Does it include specific requirements?",
+    "3": "Does it specify useful constraints such as format, audience, tone, or length?",
+    "4": "Is the prompt complete and useful enough to guide a high-quality response?"
 }
 
-SCORE_0_PROMPTS = [
-    "Help me.", "Do this.", "Anything.", "Write something.", "I need it.",
-    "Please.", "Make it good.", "Fix this.", "I don't know.", "Tell me about it.",
-    "Can you?", "Need this fast.", "Whatever is fine.", "Just make it.",
-    "Give me something.", "Do the thing.", "Make one.", "Work on it.",
-    "This please.", "Complete it."
+TOPICS = [
+    "climate change", "online learning", "customer delivery delay", "machine learning", "data privacy",
+    "healthy habits", "software engineering", "Arabic translation", "university registration",
+    "job interview preparation", "product marketing", "social media campaign", "scientific method",
+    "neural networks", "remote work", "time management", "mobile app design", "cybersecurity",
+    "exam revision", "business proposal", "medical appointment", "refund request", "technical support issue",
+    "course project", "environmental awareness", "AI ethics", "sports event", "travel plan",
+    "restaurant review", "book chapter", "research paper", "lecture notes", "shopping product",
+    "team meeting", "internship application", "grammar editing", "formal complaint", "presentation slides",
+    "student assignment", "project report", "meeting reminder", "science experiment", "data analysis",
+    "programming basics", "cloud computing", "NLP project", "database design", "customer feedback",
+    "marketing campaign", "study schedule", "public speaking", "product launch", "SQL databases",
+    "bug fixing", "resume writing", "lesson planning", "quiz preparation", "topic classification"
 ]
+
+FOCUS = [
+    "main idea", "key arguments", "supporting evidence", "conclusion", "important details",
+    "audience needs", "tone", "structure", "clarity", "main problem", "core concept",
+    "examples", "limitations", "advantages", "disadvantages", "next steps", "expected output",
+    "reader understanding", "context", "accuracy", "professional wording", "practical use",
+    "evaluation criteria", "root cause", "correctness", "measurable impact", "learning objective"
+]
+
+FORMATS = [
+    "bullet points", "numbered list", "short paragraph", "table", "one paragraph", "Q&A format",
+    "checklist", "mini report", "study-note format", "formal paragraph", "short answer",
+    "structured outline", "comparison table", "clean final version", "brief explanation",
+    "step-by-step format", "two-column table", "executive summary", "slide outline",
+    "email format", "chat reply", "caption list", "JSON format", "markdown table", "rubric format"
+]
+
+AUDIENCES = [
+    "beginners", "students", "university students", "high school students", "general readers",
+    "busy readers", "non-experts", "professionals", "a professor", "a manager", "a client",
+    "classmates", "English learners", "job candidates", "technical readers", "children",
+    "small business owners", "online shoppers", "social media followers", "new learners",
+    "first-year computer science students", "customers", "teachers", "project reviewers",
+    "software testers", "resume reviewers", "meeting participants", "data analysts"
+]
+
+CONSTRAINTS = [
+    "under 50 words", "under 100 words", "under 150 words", "in 5 bullet points",
+    "using simple language", "with a polite tone", "with a formal tone", "with examples",
+    "without adding outside information", "with a clear subject line", "with 3 hashtags",
+    "with one real-world example", "avoiding jargon", "preserving the original meaning",
+    "keeping the response concise", "including a short summary", "including a clear next step",
+    "using neutral tone", "including similarities and differences", "ending with a recommendation",
+    "including expected answers", "using a beginner-friendly style", "with no more than 3 sentences",
+    "including a clear structure", "mentioning the target audience", "using professional wording",
+    "including measurable details", "explaining the reason", "using valid JSON", "listing assumptions"
+]
+
+SCENARIOS = [
+    "for a university assignment", "for a class presentation", "for a customer message",
+    "for a business report", "for a social media post", "for an exam review",
+    "for a job application", "for a project demo", "for a professor", "for a client",
+    "for a beginner tutorial", "for a team meeting", "for a product page", "for a research summary",
+    "for an online course", "for a study group", "for a technical explanation", "for a public announcement",
+    "for a short video script", "for a professional conversation", "for an academic discussion",
+    "for a support ticket", "for a marketing campaign", "for a comparison task", "for a GitHub README",
+    "for a resume review", "for a bug tracker", "for a lesson session", "for a quiz bank"
+]
+
+VAGUE_ZERO = [
+    "Help me", "Do this", "Anything is fine", "Write something", "I need it", "Please",
+    "Make it good", "Fix this", "I do not know", "Tell me about it", "Can you",
+    "Need this fast", "Whatever works", "Just make it", "Give me something",
+    "Do the thing", "Make one", "Work on it", "This please", "Complete it",
+    "Make it better", "Handle this", "Use this", "Do something useful", "I need help"
+]
+
+RATIONALE_OPENERS = {
+    0: ["This is not a usable prompt", "This prompt is too incomplete to evaluate properly", "The submission gives almost no task guidance", "The prompt fails to communicate a meaningful request"],
+    1: ["This prompt is connected to the task but remains very vague", "The task is present, but the prompt gives minimal guidance", "This is a weak prompt because it only states the broad request", "The prompt has a recognizable goal but lacks useful detail"],
+    2: ["This prompt communicates the general intention", "The prompt is understandable but still incomplete", "This is an acceptable starting point, but it lacks important details", "The prompt gives partial guidance but remains under-specified"],
+    3: ["This is a good prompt with useful guidance", "The prompt is mostly clear and relevant", "This prompt provides a helpful direction for the task", "The prompt satisfies several rubric criteria but is not fully controlled"],
+    4: ["This is a strong prompt", "This prompt is highly effective", "The prompt gives complete and well-controlled instructions", "The prompt is clear, specific, and task-appropriate"]
+}
 
 def choose(items):
     return random.choice(items)
 
-def make_submission(task_data, score):
-    verb = task_data["verb"]
-    focus = choose(task_data["focus"])
-    fmt = choose(task_data["formats"])
-    audience = choose(task_data["audiences"])
-    constraint = choose(task_data["constraints"])
+def cap(text):
+    return text[:1].upper() + text[1:]
+
+def make_submission(verb, score):
+    topic = choose(TOPICS)
+    focus = choose(FOCUS)
+    fmt = choose(FORMATS)
+    audience = choose(AUDIENCES)
+    constraint = choose(CONSTRAINTS)
+    scenario = choose(SCENARIOS)
 
     if score == 0:
-        return choose(SCORE_0_PROMPTS)
+        return choose([
+            f"{choose(VAGUE_ZERO)}.",
+            f"{choose(VAGUE_ZERO)} {scenario}.",
+            f"{choose(VAGUE_ZERO)} about {topic}.",
+            f"{choose(VAGUE_ZERO)} please, it is urgent.",
+            f"{choose(VAGUE_ZERO)} and make it nice.",
+            f"{choose(VAGUE_ZERO)} with this {topic} thing.",
+            f"{choose(VAGUE_ZERO)} {scenario} about {topic}."
+        ])
 
-    # Score 1: related to the task but very vague
     if score == 1:
         return choose([
-            verb.capitalize() + ".",
+            f"{cap(verb)}.",
             f"Can you {verb}?",
             f"Please {verb}.",
             f"I want you to {verb}.",
             f"Help me {verb}.",
-            f"{verb.capitalize()} for me.",
-            f"Try to {verb}.",
-            f"{verb.capitalize()} quickly.",
-            f"{verb.capitalize()} in a simple way.",
-            f"{verb.capitalize()} clearly.",
+            f"{cap(verb)} for me.",
+            f"{cap(verb)} quickly.",
+            f"{cap(verb)} clearly.",
             f"I need you to {verb}.",
-            f"{verb.capitalize()} somehow.",
-            f"{verb.capitalize()} if possible.",
             f"Can you help me {verb}?",
-            f"{verb.capitalize()} with basic details.",
-            f"Do a basic version to {verb}.",
-            f"Give me something to {verb}.",
-            f"Make a simple attempt to {verb}.",
-            f"{verb.capitalize()} without much detail.",
+            f"{cap(verb)} about {topic}.",
+            f"{cap(verb)} {scenario}.",
+            f"Do a basic version to {verb} about {topic}.",
+            f"Give me something to {verb} {scenario}.",
             f"Just {verb}."
         ])
 
-    # Score 2: understandable but missing important details/constraints
     if score == 2:
         return choose([
-            f"Please {verb} clearly.",
+            f"Please {verb} clearly about {topic}.",
             f"Can you {verb} with some details?",
-            f"{verb.capitalize()} and include the main idea.",
-            f"Help me {verb} in a simple way.",
-            f"{verb.capitalize()} with a short explanation.",
-            f"{verb.capitalize()} for {audience}.",
-            f"{verb.capitalize()} and focus on {focus}.",
+            f"{cap(verb)} and include the main idea.",
+            f"Help me {verb} in a simple way {scenario}.",
+            f"{cap(verb)} with a short explanation.",
+            f"{cap(verb)} for {audience}.",
+            f"{cap(verb)} and focus on {focus}.",
             f"Please {verb} using {fmt}.",
-            f"{verb.capitalize()} while keeping it concise.",
-            f"{verb.capitalize()} and make it easy to understand.",
-            f"{verb.capitalize()} with some useful details.",
-            f"{verb.capitalize()} using clear language.",
-            f"{verb.capitalize()} and organize the response well.",
-            f"{verb.capitalize()} with examples if possible.",
-            f"Please {verb} and explain the important parts.",
-            f"{verb.capitalize()} for {audience} with a short response.",
-            f"Use {fmt} to {verb}.",
-            f"{verb.capitalize()} and include {focus}.",
-            f"Please {verb} with clear wording.",
-            f"{verb.capitalize()} in a way that is easy to follow."
+            f"{cap(verb)} while keeping it concise.",
+            f"{cap(verb)} and make it easy to understand.",
+            f"{cap(verb)} using clear language.",
+            f"{cap(verb)} and organize the response well.",
+            f"{cap(verb)} with examples if possible.",
+            f"{cap(verb)} about {topic} and include some useful details.",
+            f"Use {fmt} to {verb} {scenario}."
         ])
 
-    # Score 3: good but still missing one strong element
     if score == 3:
         return choose([
             f"Please {verb} for {audience} and focus on {focus}.",
-            f"{verb.capitalize()} using {fmt} and include {focus}.",
+            f"{cap(verb)} using {fmt} and include {focus}.",
             f"Can you {verb} clearly with {focus} and {constraint}?",
-            f"{verb.capitalize()} in a useful way for {audience}.",
+            f"{cap(verb)} in a useful way for {audience}.",
             f"Please {verb} with {fmt} and make it suitable for {audience}.",
-            f"{verb.capitalize()} with a clear structure and focus on {focus}.",
+            f"{cap(verb)} with a clear structure and focus on {focus}.",
             f"Please {verb} for {audience}, using clear language and {fmt}.",
-            f"{verb.capitalize()} with {constraint} and include {focus}.",
-            f"Create a useful response to {verb} for {audience}.",
-            f"{verb.capitalize()} and organize it as {fmt}."
+            f"{cap(verb)} with {constraint} and include {focus}.",
+            f"{cap(verb)} about {topic} for {audience} and focus on {focus}.",
+            f"Please {verb} with a clear structure {scenario}."
         ])
 
-    # Score 4: excellent, complete, and task-specific
     return choose([
-        f"Please {verb} for {audience} using {fmt}, focusing on {focus}, and make sure to {constraint}.",
-        f"{verb.capitalize()} with {fmt}, include {focus}, use a style suitable for {audience}, and {constraint}.",
+        f"Please {verb} about {topic} for {audience} using {fmt}, focusing on {focus}, and make sure to {constraint}.",
+        f"{cap(verb)} with {fmt}, include {focus}, use a style suitable for {audience}, and {constraint}.",
         f"Create a high-quality response that will {verb}, target {audience}, include {focus}, and follow this constraint: {constraint}.",
-        f"{verb.capitalize()} in a complete and clear way for {audience}; use {fmt}, cover {focus}, and {constraint}.",
+        f"{cap(verb)} in a complete and clear way for {audience}; use {fmt}, cover {focus}, and {constraint}.",
         f"Please {verb} with a clear structure, target {audience}, include {focus}, use {fmt}, and {constraint}.",
         f"Produce a polished response to {verb}; use {fmt}, focus on {focus}, target {audience}, and {constraint}.",
-        f"{verb.capitalize()} for {audience} with a clear goal, {fmt}, focus on {focus}, and the constraint: {constraint}.",
-        f"Write a complete prompt response to {verb}, designed for {audience}, using {fmt}, including {focus}, and making sure to {constraint}.",
-        f"Please {verb} in a well-organized {fmt}, suitable for {audience}, covering {focus}, and following this requirement: {constraint}.",
-        f"Create a detailed and controlled response to {verb}; audience: {audience}; format: {fmt}; focus: {focus}; constraint: {constraint}."
+        f"Create a detailed and controlled response to {verb}; topic: {topic}; audience: {audience}; format: {fmt}; focus: {focus}; constraint: {constraint}.",
+        f"Please {verb} in a well-organized {fmt}, suitable for {audience}, covering {focus}, and following this requirement: {constraint}."
     ])
 
-RATIONALE_OPENERS = {
-    0: [
-        "This is not a usable prompt",
-        "This prompt is too incomplete to evaluate properly",
-        "The submission gives almost no task guidance"
-    ],
-    1: [
-        "This prompt is connected to the task but remains very vague",
-        "The task is present, but the prompt gives minimal guidance",
-        "This is a weak prompt because it only states the broad request"
-    ],
-    2: [
-        "This prompt communicates the general intention",
-        "The prompt is understandable but still incomplete",
-        "This is an acceptable starting point, but it lacks important details"
-    ],
-    3: [
-        "This is a good prompt with useful guidance",
-        "The prompt is mostly clear and relevant",
-        "This prompt provides a helpful direction for the task"
-    ],
-    4: [
-        "This is a strong prompt",
-        "This prompt is highly effective",
-        "The prompt gives complete and well-controlled instructions"
-    ],
-}
-
-def make_rationale(score, task, submission):
+def make_rationale(score, task_name, submission):
     opener = choose(RATIONALE_OPENERS[score])
-
     if score == 0:
-        return (
-            f"{opener}. The submission '{submission}' does not clearly connect to '{task}' "
-            f"and fails the rubric on clarity, specificity, and completeness."
-        )
-
+        return f"{opener}. The submission '{submission}' does not clearly connect to the task '{task_name}' and fails the rubric on clarity, specificity, and completeness."
     if score == 1:
-        return (
-            f"{opener}. The submission '{submission}' mentions the general task, but it does not specify "
-            f"the expected format, audience, focus, or constraints."
-        )
-
+        return f"{opener}. The submission '{submission}' mentions the general task, but it does not specify the expected format, audience, focus, or constraints."
     if score == 2:
-        return (
-            f"{opener}. The submission '{submission}' gives some direction, but it only partially satisfies "
-            f"the rubric because key details such as focus, format, audience, or constraints are missing."
-        )
-
+        return f"{opener}. The submission '{submission}' gives some direction, but it only partially satisfies the rubric because key details such as focus, format, audience, or constraints are missing."
     if score == 3:
-        return (
-            f"{opener}. The submission '{submission}' satisfies clarity and some specificity, but it could be "
-            f"improved by adding more complete constraints or a more precise output format."
-        )
-
-    return (
-        f"{opener}. The submission '{submission}' clearly defines the task, includes relevant constraints, "
-        f"and gives enough detail about audience, focus, or format to satisfy the rubric well."
-    )
-
-def make_entry(task_name, score):
-    task_data = TASKS[task_name]
-    submission = make_submission(task_data, score)
-
-    return {
-        "task": task_name,
-        "reference": task_data["reference"],
-        "submission": submission,
-        "rubric": task_data["rubric"],
-        "score": score,
-        "rationale": make_rationale(score, task_name, submission)
-    }
+        return f"{opener}. The submission '{submission}' satisfies clarity and some specificity, but it could be improved by adding more complete constraints or a more precise output format."
+    return f"{opener}. The submission '{submission}' clearly defines the task, includes relevant constraints, and gives enough detail about audience, focus, or format to satisfy the rubric well."
 
 def main():
     dataset = []
-    seen = set()
     score_counts = Counter()
 
-    # Generate per score directly to guarantee balance
     for score in range(5):
-        attempts = 0
-        while score_counts[score] < TARGET_PER_SCORE:
-            attempts += 1
-            if attempts > 200000:
-                raise RuntimeError(f"Could not generate enough unique samples for score {score}. Add more templates.")
-
-            task_name = random.choice(list(TASKS.keys()))
-            entry = make_entry(task_name, score)
-
-            key = (
-                entry["task"].lower().strip(),
-                entry["reference"].lower().strip(),
-                entry["submission"].lower().strip()
-            )
-
-            if key in seen:
-                continue
-
-            seen.add(key)
-            dataset.append(entry)
+        for _ in range(TARGET_PER_SCORE):
+            task_name, verb, reference = choose(TASKS)
+            submission = make_submission(verb, score)
+            dataset.append({
+                "task": task_name,
+                "reference": reference,
+                "submission": submission,
+                "rubric": RUBRIC_DEFAULT,
+                "score": score,
+                "rationale": make_rationale(score, task_name, submission)
+            })
             score_counts[score] += 1
 
     random.shuffle(dataset)
@@ -428,7 +247,7 @@ def main():
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(dataset, f, indent=4, ensure_ascii=False)
+        json.dump(dataset, f, indent=2, ensure_ascii=False)
 
     print(f"Dataset saved to {OUTPUT_PATH}")
     print(f"Total samples: {len(dataset)}")

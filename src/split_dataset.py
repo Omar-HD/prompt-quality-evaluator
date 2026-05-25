@@ -1,6 +1,7 @@
 import json
 import random
 from pathlib import Path
+from collections import defaultdict, Counter
 
 INPUT_PATH = Path("data/processed/formatted_dataset.json")
 
@@ -13,27 +14,51 @@ random.seed(42)
 with open(INPUT_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-random.shuffle(data)
+by_score = defaultdict(list)
 
-n = len(data)
-train_end = int(n * 0.70)
-val_end = int(n * 0.85)
+for item in data:
+    output = item["output"]
+    score = int(output.split("Score:")[1].split()[0])
+    by_score[score].append(item)
 
-train_data = data[:train_end]
-val_data = data[train_end:val_end]
-test_data = data[val_end:]
+train_data = []
+val_data = []
+test_data = []
+
+for score in sorted(by_score.keys()):
+    items = by_score[score]
+    random.shuffle(items)
+
+    n = len(items)
+    train_end = int(n * 0.70)
+    val_end = int(n * 0.85)
+
+    train_data.extend(items[:train_end])
+    val_data.extend(items[train_end:val_end])
+    test_data.extend(items[val_end:])
+
+random.shuffle(train_data)
+random.shuffle(val_data)
+random.shuffle(test_data)
+
+TRAIN_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 for path, split_data in [
     (TRAIN_PATH, train_data),
     (VAL_PATH, val_data),
     (TEST_PATH, test_data),
 ]:
-    path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(split_data, f, indent=4, ensure_ascii=False)
+        json.dump(split_data, f, indent=2, ensure_ascii=False)
 
-print("Dataset split completed")
-print(f"Total: {n}")
-print(f"Train: {len(train_data)}")
-print(f"Validation: {len(val_data)}")
-print(f"Test: {len(test_data)}")
+def score_distribution(split_data):
+    counts = Counter()
+    for item in split_data:
+        score = int(item["output"].split("Score:")[1].split()[0])
+        counts[score] += 1
+    return dict(sorted(counts.items()))
+
+print("Stratified split completed")
+print(f"Train: {len(train_data)}", score_distribution(train_data))
+print(f"Validation: {len(val_data)}", score_distribution(val_data))
+print(f"Test: {len(test_data)}", score_distribution(test_data))

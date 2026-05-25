@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-INPUT_PATH = Path("data/raw/final_prompt_quality_dataset.json")
+INPUT_PATH = Path("data/raw/prompt_quality_dataset.json")
 OUTPUT_PATH = Path("data/processed/formatted_dataset.json")
 
 with open(INPUT_PATH, "r", encoding="utf-8") as f:
