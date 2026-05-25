@@ -7,8 +7,8 @@ random.seed(42)
 
 OUTPUT_PATH = Path("data/raw/prompt_quality_dataset.json")
 
-# 100,000 total = 20,000 per score
-TARGET_PER_SCORE = 20000
+
+TARGET_PER_SCORE = 8000
 
 TASKS = [
     ("Summarize an article", "summarize the article", "Summarize the article clearly by focusing on the main idea, key arguments, and conclusion."),
