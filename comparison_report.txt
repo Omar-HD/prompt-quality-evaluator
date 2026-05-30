@@ -1,0 +1,178 @@
+================================================================================
+BASELINE VS FINE-TUNED COMPARISON
+================================================================================
+Baseline Correct: 225/400
+Fine-tuned Correct: 384/400
+
+
+Example #1
+--------------------------------------------------------------------------------
+Gold Score: 2
+Baseline Prediction: 1
+Fine-tuned Prediction: 2
+
+Input:
+Task:
+Write a cover letter
+
+Reference Prompt:
+Write a cover letter for a senior software engineer position at a fintech startup. Address it to the hiring manager, emphasize your 8 years of experience with Python and distributed systems, explain your interest in financial technology, and keep it under 400 words with a professional yet enthusiastic tone.
+
+Submitted Prompt:
+Write a cover letter for a software engineer job. Include my technical skills and why I want the position.
+
+Rubric:
+1. Does the prompt clearly state the task?
+2. Does it include specific requirements or details?
+3. Does it specify useful constraints such as format, audience, tone, or length?
+4. Is the prompt complete and use
+
+Baseline Response:
+Score: 1
+Rationale:
+The submitted prompt does not meet the requirements of the rubric. It does not clearly state the task as it does not mention writing a cover letter, nor does it specify the position or the company. It also does not include any requirements or details about the technical skills, the audience, the tone, or the length of the cover letter. Therefore, it
+
+Fine-tuned Response:
+Score: 2
+
+Rationale:
+The prompt clearly identifies the task of writing a cover letter for a software engineer position and mentions including technical skills and motivations. However, it lacks critical constraints such as the specific role level, company type, desired tone, length requirements, and formatting expectations that would guide a high-quality, targeted response.
+
+================================================================================
+
+Example #2
+--------------------------------------------------------------------------------
+Gold Score: 1
+Baseline Prediction: 3
+Fine-tuned Prediction: 1
+
+Input:
+Task:
+Simplify complex text
+
+Reference Prompt:
+Simplify the text while preserving the original meaning and making it easier for the target audience to understand.
+
+Submitted Prompt:
+Help me simplify the complex text.
+
+Rubric:
+1. Does the prompt clearly request simplification?
+2. Does it specify the target audience or reading level?
+3. Does it mention preserving meaning or reducing jargon?
+4. Is the prompt complete enough to produce a clear simplified version?
+
+Baseline Response:
+Score: 3
+Rationale:
+The prompt does request simplification, but it does not specify the target audience or reading level. It also does not mention preserving meaning or reducing jargon explicitly, but it is implied based on the reference prompt. The prompt is complete enough to produce a simplified version, but additional information would make it clearer.
+
+Fine-tuned Response:
+Score: 1
+
+Rationale:
+This prompt is connected to the task but remains very vague. The submission 'Help me simplify the complex text.' mentions the general task, but it does not specify the expected format, audience, focus, or constraints. It fails criteria 2, 3, and 4 entirely, and only partially satisfies criterion 1 by vaguely indicating the general task direction.
+
+================================================================================
+
+Example #3
+--------------------------------------------------------------------------------
+Gold Score: 4
+Baseline Prediction: 3
+Fine-tuned Prediction: 4
+
+Input:
+Task:
+Write a product description
+
+Reference Prompt:
+Write a persuasive product description that highlights features, benefits, and the target customer.
+
+Submitted Prompt:
+Create a high-quality response that will write a product description, target young adults, include target audience, and follow this constraint: mention benefits.
+
+Rubric:
+1. Does the prompt clearly request a product description?
+2. Does it specify product features or target audience?
+3. Does it mention tone, benefits, or format?
+4. Is the prompt complete enough to create a persuasive description?
+
+Baseline Response:
+Score: 3
+Rationale:
+The prompt requests a product description, but it is not clear if it is asking for a persuasive or informative description. It does mention the target audience, but it does not specify any features or benefits. The constraint to mention benefits is a positive sign, but the prompt does not provide enough context or detail to create a persuasive description.
+
+Fine-tuned Response:
+Score: 4
+
+Rationale:
+This prompt is highly effective. The submission 'Create a high-quality response that will write a product description, target young adults, include target audience, and follow this constraint: mention benefits.' clearly defines the task, includes relevant constraints, and gives enough detail about audience, focus, or format to satisfy the rubric well.
+
+================================================================================
+
+Example #4
+--------------------------------------------------------------------------------
+Gold Score: 2
+Baseline Prediction: 3
+Fine-tuned Prediction: 2
+
+Input:
+Task:
+Summarize text
+
+Reference Prompt:
+Summarize the following research article about climate change in 3-4 sentences for a general audience. Focus on the main findings and practical implications. Use clear, non-technical language and maintain an informative but accessible tone.
+
+Submitted Prompt:
+Summarize this article about climate change and mention the main findings.
+
+Rubric:
+1. Does the prompt clearly state the task?
+2. Does it include specific requirements or details?
+3. Does it specify useful constraints such as format, audience, tone, or length?
+4. Is the prompt complete and useful enough to guide a high-quality response?
+
+Baseline Response:
+Score: 3
+Rationale:
+The submitted prompt is clear about the task, which is to summarize an article about climate change. However, it lacks specific requirements or details, such as the desired length or tone of the summary. Additionally, it does not mention the need for non-technical language or a general audience, which were important aspects of the reference prompt. While the
+
+Fine-tuned Response:
+Score: 2
+
+Rationale:
+The submission clearly identifies the summarization task and specifies that main findings should be included, meeting criteria 1 and partially meeting criteria 2. However, it lacks essential constraints like target audience, desired length, tone, or format, failing criteria 3 and 4. The prompt is useful but incomplete for generating a high-quality response.
+
+================================================================================
+
+Example #5
+--------------------------------------------------------------------------------
+Gold Score: 3
+Baseline Prediction: 4
+Fine-tuned Prediction: 3
+
+Input:
+Task:
+Write a game development narrative design document
+
+Reference Prompt:
+Write the narrative design document for the opening chapter of a third-person action RPG. Cover protagonist backstory, inciting incident, primary antagonist motivation, world-building exposition delivery method, and player agency decision points. Target the narrative team and senior game director.
+
+Submitted Prompt:
+Write the narrative design document for the opening chapter of a third-person action RPG. Cover protagonist backstory, inciting incident, antagonist motivation, exposition delivery, and player decision points. Target the narrative team and game director.
+
+Rubric:
+1. Does the prompt clearly state the task?
+
+Baseline Response:
+Score: 4
+Rationale:
+The submitted prompt is clear, specific, and complete. It specifies the genre, the elements to include in the narrative design document, and the target audience. The only potential improvement would be to add more details about the format or length of the document, but this is not strictly necessary for a high-quality response.
+
+Fine-tuned Response:
+Score: 3
+
+Rationale:
+Genre, five narrative elements, dual audience, and document type all defined. Missing word count, specific exposition method, decision point count, and protagonist name/role context. Very actionable but slightly underspecified.
+
+================================================================================
